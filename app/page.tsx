@@ -22,7 +22,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="mb-8 px-0 text-lg font-medium text-gray-600 md:text-xl lg:px-24">
-            Nota Rapida is a simple note taking app that wishes to provide a
+            Brain Wave is a simple note taking app that wishes to provide a
             minimalistic note-taking experience.
           </p>
           <LandingButtons />
