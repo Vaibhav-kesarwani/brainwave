@@ -15,13 +15,13 @@ export default function LandingButtons() {
               Notes <ArrowRight className="size-5 stroke-2" />
             </Button>
           </Link>
-          <Button className="flex items-center justify-center gap-2 p-6">
+          <Button className="flex items-center justify-center gap-2 p-6 opacity-50 cursor-not-allowed disabled">
             <a
               href="https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/03c8dcb1-10db-4b98-986b-ebe560b47279-bzfb4k.exe"
               download
-              className="flex items-center gap-3"
+              className="flex items-center gap-3 cursor-not-allowed"
             >
-              Download for Windows <LaptopMinimal className="size-5 stroke-2" />
+              Download for Windows <LaptopMinimal className="size-5 stroke-2 cursor-not-allowed" />
             </a>
           </Button>
         </div>
