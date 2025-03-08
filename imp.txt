@@ -1,0 +1,5 @@
+Steps to follow 
+
+pnpm dlx prisma migrate dev --name migration_name
+pnpm dlx prisma generate --accelerate
+pnpm run dev

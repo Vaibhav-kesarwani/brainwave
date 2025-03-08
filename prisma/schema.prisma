@@ -1,0 +1,47 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  clerkId   String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  name      String?
+  email     String   @unique
+  folders   Folder[]
+  notes     Note[]
+}
+
+model Note {
+  id          String    @id @default(cuid())
+  title       String
+  content     String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  user        User      @relation(fields: [userId], references: [clerkId], onDelete: Cascade)
+  userId      String
+  folder      Folder    @relation(fields: [folderId], references: [id], onDelete: Cascade)
+  folderId    String
+  order       Int
+  trashed     Boolean   @default(false)
+  trashedDate DateTime?
+}
+
+model Folder {
+  id          String    @id @default(cuid())
+  name        String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  notes       Note[]
+  user        User      @relation(fields: [userId], references: [clerkId], onDelete: Cascade)
+  userId      String
+  order       Int
+  trashed     Boolean   @default(false)
+  trashedDate DateTime?
+}

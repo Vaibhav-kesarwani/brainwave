@@ -1,0 +1,21 @@
+import { SignIn } from "@clerk/nextjs";
+
+export default function Page() {
+  return (
+    <div className="flex h-full min-h-[100dvh] w-full flex-col items-center justify-center">
+      <div className="mb-4 flex w-full flex-col items-center justify-center text-center">
+        <h1 className="text-3xl font-extrabold">
+          Welcome Back to{" "}
+          <span className="bg-gradient-to-b from-zinc-700 to-sky-600 bg-clip-text text-transparent">
+            Nota Rapida
+          </span>
+        </h1>
+        <p className="mt-2 text-sm font-medium text-muted-foreground">
+          Your Notes, Anytime, Anywhere
+        </p>
+      </div>
+
+      <SignIn />
+    </div>
+  );
+}
