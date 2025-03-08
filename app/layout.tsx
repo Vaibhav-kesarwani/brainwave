@@ -8,7 +8,7 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Nota Rapida",
+  title: "Brain Wave",
   description: "A simpe note taking app to help you organise your life.",
   openGraph: {
     images: [
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         url: "/landing.png",
         width: 1200,
         height: 630,
-        alt: "Nota Rapida",
+        alt: "Brain Wave",
       },
     ],
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "/landing.png",
         width: 1200,
         height: 630,
-        alt: "Nota Rapida",
+        alt: "Brain Wave",
       },
     ],
   },
