@@ -14,7 +14,7 @@ export default async function TopBar() {
           <CurrentTime />
         </span>
         <Link href={"/"} className="hidden font-bold lg:block">
-          Nota Rapida
+          Brain Wave
         </Link>
         <div className="flex items-center gap-3 font-light">
           <p>{user?.fullName}</p> <LogoutButton />
