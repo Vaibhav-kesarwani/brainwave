@@ -30,7 +30,7 @@ Brainwave is built with the following technologies:
 - **Clerk** - For authentication and user management.
 
 ### Inorder to test the application locally:
-1. Clone the repository: `git clone https://github.com/actuallyakshat/nota-rapida.git`
+1. Clone the repository: `git clone https://github.com/Vaibhav-kesarwani/brainwave.git`
 2. Install dependencies: `pnpm install`
 3. Set Environment Variables:
      ```
